@@ -1,12 +1,13 @@
 
 :root{
-    --verde : #c02e29;
-    --azul: #0060b1;
-    --cinza-medio : #545454;
+    --verde : #000000 ;
+    --azul: #1972bb;
+    --cinza-medio : #000000;
     --azul-escuro:#222c34;
     --branco:#ffffff;
-    --cinza-claro:#ced4da;
+    --cinza-claro:#e7eff7;
 }
+
 
 /*NAVBAR*/
 #koglinski{
@@ -72,7 +73,7 @@
 
 /*Sobre*/
 #sobre{
-    padding: 60px 0;
+    padding: 80px 0;
     border-bottom: 1px solid #e5e5e5;
 }
 
@@ -86,7 +87,7 @@
 } 
 
 #contato{
-    padding: 60px 0;
+    padding: 80px 0;
     border-bottom: 1px solid #e5e5e5;
 }
 
@@ -99,23 +100,35 @@
 /*caes*/
 
 
-#itens{
-    text-align: center;
+#caes{
+    padding: 80px 0;
+    border-bottom: 1px solid #e5e5e5;
 }
 
-#caes h1{
-    text-decoration: underline;
+#itens{
+    text-align: center;
 }
 
 
 /* Localização*/
 
+#localização{
+    padding: 80px 0;
+}
+
+
 .mapBox{
     position: relative;
     width: 600px;
     height: 500px;
-    background-color: white;
     margin-left: 280px;
+}
+
+#iframe{
+    width: 600px;
+    height: 500px;
+    border-radius: 10%;
+
 
 }
 
