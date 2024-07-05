@@ -1,50 +1,83 @@
 
 :root{
     --verde : #000000 ;
-    --azul: #1972bb;
+    --azul: #4f9bd8;
     --cinza-medio : #000000;
     --azul-escuro:#222c34;
     --branco:#ffffff;
     --cinza-claro:#e7eff7;
+    --nova-cor:#4f9bd8;
+    
 }
-
 
 /*NAVBAR*/
 #koglinski{
     font-size: x-large;
 }
 
-.nav-link{
+#nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona uma transição suave */
+}
+
+#nav.scrolled {
+    background-color: var(--nova-cor); /* Substitua com a cor desejada */
+    color: var(--branco); /* Substitua com a cor do texto desejada */
+}
+
+#nav.scrolled .navbar-brand,
+#nav.scrolled .nav-link,
+#nav.scrolled .btn {
+    color: var(--branco); /* Substitua com a cor do texto desejada */
+}
+
+
+#nav.scrolled .navbar-toggler-icon {
+    filter: brightness(0) invert(1); /* Substitua se necessário para melhor visualização */
+}
+body {
+    padding-top: 70px; /* Ajuste conforme a altura real do header */
+}
+
+.nav-link {
     text-transform: uppercase;
     font-weight: 600;
 }
 
-.nav-link:hover{
-    color:var(--verde);
+.nav-link:hover {
+    color: var(--verde);
 }
 
-#navbarNav a.btn{
+#navbarNav a.btn {
     text-transform: uppercase;
     font-weight: 600;
     background-color: var(--verde);
     border-color: var(--verde);
-    border-radius: 0;
-
+    border: 0;
 }
 
-#navbarNav a.btn:hover{
+#navbarNav a.btn:hover {
     background-color: var(--azul);
-    border-color: var(--azul);
 }
 
-
-.btn.btn-primary.verde:hover{
+.btn.btn-primary.verde:hover {
     background-color: var(--verde);
-    border-color: var(--verde);
+
+}
+
+#nav.scrolled .nav-link:hover {
+    color: var(--verde); /* Cor desejada para o hover no estado scrollado */
+}
+
+#nav.scrolled #navbarNav a.btn:hover {
+    background-color: var(--nova-cor); /* Cor desejada para o botão no hover no estado scrollado */
 }
 
 
-.img-header{
+.img-header {
     height: 400px;
     width: 400px;
 }
