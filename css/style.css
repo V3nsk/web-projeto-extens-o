@@ -7,6 +7,7 @@
     --branco:#ffffff;
     --cinza-claro:#e7eff7;
     --nova-cor:#4f9bd8;
+    --bg-color: rgb(210, 237, 253);
     
 }
 
@@ -40,6 +41,7 @@
 }
 body {
     padding-top: 70px; /* Ajuste conforme a altura real do header */
+    background-color: var(--bg-color);
 }
 
 .nav-link {
@@ -133,17 +135,38 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 20px;
+
+
 } 
 
 #contato{
     padding: 80px 0;
     border-bottom: 1px solid #e5e5e5;
+    background-color: var(--bg-color);
 }
 
 #alg{
     display: flex;
     justify-content: center;
     
+}
+
+#contato  .card{
+    background-color: transparent;
+    border-radius: 8%;
+    border-color: var(--azul);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px var(--azul);
+}
+
+.card{
+    overflow-y: hidden;
+    background-color: transparent;
+    border-radius: 8%;
+    border-color: var(--azul);
+  
 }
 
 /*caes*/
