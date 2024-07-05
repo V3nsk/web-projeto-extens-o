@@ -82,6 +82,22 @@ body {
     width: 400px;
 }
 
+/*pagina caes*/
+
+#NovaNav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona uma transição suave */
+    background-color: var(--azul);
+}
+
+#koglinskiNova{
+    color:#ffffff;
+    font-size: x-large;
+}
+
 /* Home */
 
 #home{
@@ -131,8 +147,6 @@ body {
 }
 
 /*caes*/
-
-
 #caes{
     padding: 80px 0;
     border-bottom: 1px solid #e5e5e5;
@@ -141,6 +155,14 @@ body {
 #itens{
     text-align: center;
 }
+
+.square{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 
 /* Localização*/
